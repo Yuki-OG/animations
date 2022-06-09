@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.child {
+  border: solid black;
+  animation-name: something;
+  animation-duration: 7s;
+}
+
+@keyframes something {
+  50% {
+    left: 100%;
+  }
+}
+
+.child::after {
+  animation-name: something;
+  animation-duration: 6s;
+}
