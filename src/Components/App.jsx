@@ -10,27 +10,9 @@ const Container = styled.div`
   height: 50vh;
   position: relative;
 `
-
-// animation-name: ${X_Axis};
-// animation-duration: 6s;
-// animation-iteration-count: infinite;
-// animation-timing-function: linear;
-
-const axisSlide = keyframes`
-  50% {
-    top: 100%;
-  }
-`
-
-// animation: ${axisSlide} 6s infinite linear;
-// animation-name: ${axisSlide};
-// animation-duration: 6s;
-// animation-iteration-count: infinite;
-// animation-timing-function: linear;
 const Child = styled.div`
 position: absolute;
-top: 0;
-left: 0;
+animation: ${X_Axis} 5s infinite ease-in;
 
 &::after {
   content: "";
@@ -40,8 +22,7 @@ left: 0;
   border-radius: 50%;
   background-color: lightgreen;
   position: absolute;
-  top: 0;
-  left: 0;
+  animation: ${Y_Axis} 5s infinite linear;
 }
 `
 
